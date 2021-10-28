@@ -65,11 +65,28 @@ echo "La variable \$cuadrado vale $cuadrado y es de tipo " . gettype($cuadrado) 
 echo "--- Variables globales no accesibles dentro de la función." . BR;
 function cuadrado3($valor)
 {
+    global $numero;
     $cuadrado = $valor * $valor;
     echo "El cuadrado de $valor es $cuadrado" . BR;
     echo "La variable \$numero dentro de la función vale $numero y es de tipo " . gettype($numero) . BR;
+    echo "La variable global \$numero dentro de la función vale " . $GLOBALS["numero"] . " y es de tipo " . gettype($GLOBALS["numero"]) . BR;
 }
 $numero = 3;
 cuadrado3($numero);
 echo "La variable \$numero fuera de la función  vale $numero y es de tipo " . gettype($numero) . BR;
 echo "La variable \$cuadrado fuera de la función vale $cuadrado y es de tipo " . gettype($cuadrado) . BR;
+echo BR;
+
+echo "--- Variables estáticas" . BR;
+function estaticas()
+{
+    static $variableNormal;
+    $variableNormal += 5;
+    echo "El valor de \$variableNormal al comienzo de la función es $variableNormal" . BR;
+    $variableNormal *= 2;
+    echo "Al duplicar \$variableNormal su valor es $variableNormal" . BR;
+}
+echo "<u>Primera ejecución de la función.</u>" . BR;
+estaticas();
+echo "<u>Segunda ejecución de la función.</u>" . BR;
+estaticas();
