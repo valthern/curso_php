@@ -1,7 +1,7 @@
 <?php
 define("BR", "<br />");
 
-echo "--- Funciones para argumentos" . BR;
+echo "<b>--- Funciones para argumentos</b>" . BR;
 function comprobarArgumentos()
 {
     // Uso de func_num_args().
@@ -33,7 +33,7 @@ $variable3 = "ADIÓS";
 
 comprobarArgumentos($variable1, $variable2, $variable3);
 
-echo "--- Argumentos por valor o por referencia" . BR;
+echo "<b>--- Argumentos por valor o por referencia</b>" . BR;
 // Paso por referencia agregando un "&" al parámetro.
 function cuadrado(&$numero)
 {
@@ -55,7 +55,7 @@ function cuadrado2($numero)
 }
 
 // Variables locales no accesibles en el scope del script.
-echo "--- Variables locales no accesibles en el scope del script." . BR;
+echo "<b>--- Variables locales no accesibles en el scope del script.</b>" . BR;
 $numero = 3;
 cuadrado2($numero);
 echo "La variable \$numero vale $numero y es de tipo " . gettype($numero) . BR;
@@ -77,7 +77,7 @@ echo "La variable \$numero fuera de la función  vale $numero y es de tipo " . g
 echo "La variable \$cuadrado fuera de la función vale $cuadrado y es de tipo " . gettype($cuadrado) . BR;
 echo BR;
 
-echo "--- Variables estáticas" . BR;
+echo "<b>--- Variables estáticas</b>" . BR;
 function estaticas()
 {
     static $variableNormal;
@@ -90,3 +90,6 @@ echo "<u>Primera ejecución de la función.</u>" . BR;
 estaticas();
 echo "<u>Segunda ejecución de la función.</u>" . BR;
 estaticas();
+
+// Manejo de bits
+echo "--- Manejo de bits" . BR;
