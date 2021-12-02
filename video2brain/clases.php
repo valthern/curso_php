@@ -1,6 +1,20 @@
 <?php
 include_once "_constantes.php";
 
+class PrimerObjeto{
+    var $variableUno;
+    var $variableDos;
+
+    public function metodo1()
+    {
+        # code...
+    }
+    public function metodo2($parametro1, $parametro2)
+    {
+        # code...
+    }
+}
+
 class DimeAlgo
 {
     var $atributo;
@@ -38,6 +52,6 @@ $decir->DimeAlgo("HOLA!");
 
 echo BR . BR;
 
-$instancia = new Saluda();
+$instancia = new SubSaluda();
 $instancia->saludo();
 $instancia->adios();
