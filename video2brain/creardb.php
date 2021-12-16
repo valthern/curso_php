@@ -1,6 +1,4 @@
 <?php
-// Ejercicio de otro sitio
-// https://www.hostinger.mx/tutoriales/conectar-php-mysql#Dos-formas-en-que-un-script-PHP-puede-conectarse-a-MySQL
 include_once "_constantes.php";
 
 $servername = "192.168.64.2";
@@ -13,6 +11,13 @@ $conexion = mysqli_connect($servername, $username, $password, $database);
 if (!$conexion) {
     die("La conexión falló: " . mysqli_connect_error());
 }
+
+if (mysqli_query()) {
+    # code...
+} else {
+    # code...
+}
+
 
 echo "Conexión exitosa" . BR;
 mysqli_close($conexion);
