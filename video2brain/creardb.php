@@ -12,7 +12,7 @@ if (!$conexion) {
     die("La conexión falló: " . mysqli_connect_error());
 }
 
-if (mysqli_query()) {
+if (mysqli_query(/* QUIEN SABE QUÉ MADRES VA AQUÍ */)) {
     # code...
 } else {
     # code...
