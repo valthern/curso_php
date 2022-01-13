@@ -10,4 +10,3 @@ foreach ($_FILES["pictures"]["error"] as $key => $error) {
         # code...
     }
 }
-?>
