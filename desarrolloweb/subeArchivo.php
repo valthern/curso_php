@@ -7,7 +7,7 @@ echo "Escribió en el campo de texto: " . $cadenatexto . "<br><br>";
 $nombre_archivo = $_FILES['userfile']['name'];
 $tipo_archivo = $_FILES['userfile']['type'];
 $tamano_archivo = $_FILES['userfile']['size'];
-	
+
 //compruebo si las características del archivo son las que deseo
 if (!((strpos($tipo_archivo, "gif") || strpos($tipo_archivo, "jpeg")) && ($tamano_archivo < 100000))) {
    	echo "La extensión o el tamaño de los archivos no es correcta. <br><br><table><tr><td><li>Se permiten archivos .gif o .jpg<br><li>se permiten archivos de 100 Kb máximo.</td></tr></table>";
