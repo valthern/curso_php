@@ -1,6 +1,6 @@
 <?php
 // Se comprueba si el archivo tiene el formato adecuado
-if ($_FILES["fichero"]["type"] != "image/pjpeg") {
+if ($_FILES["fichero"]["type"] != "image/jpeg") {
     die("El ficheero no tiene el formato adecuado");
 }
 // Se comprueba que el fichero tenga un peso adecuado

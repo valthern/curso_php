@@ -20,7 +20,7 @@
     $error = false;
 
     // Se comprueba si el archivo tiene el formato adecuado
-    if ($_FILES["fichero"]["type"] != "image/pjpeg") {
+    if ($_FILES["fichero"]["type"] != "image/jpeg") {
         echo "El archivo no está en el formato adecuado" . BR;
         $error = true;
     }

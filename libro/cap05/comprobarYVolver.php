@@ -3,7 +3,7 @@ include_once "_constantes.php";
 $error = false;
 
 // Se comprueba si el archivo tiene el formato adecuado
-if ($_FILES["fichero"]["type"] != "image/pjpeg") {
+if ($_FILES["fichero"]["type"] != "image/jpeg") {
     $error = true;
 }
 // Se comprueba que tenga un peso adecuado
