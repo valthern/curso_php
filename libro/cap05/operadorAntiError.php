@@ -38,7 +38,7 @@
     } else {
         // Por último se intenta grabar y se comprueba si se graba bien
         $archivoRecibido = $_FILES["fichero"]["tmp_name"];
-        $destino = "ficherosEnviados/fotoDelUsuario.jpg";
+        $destino = "ficherosSubidos/fotoDelUsuario.jpg";
         if (move_uploaded_file($archivoRecibido, $destino)) {
             echo "Fichero grabado";
         } else {
