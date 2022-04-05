@@ -3,8 +3,7 @@ include_once "_constantes.php";
 
 $cadena = "Esta es la cadena en la que se buscará una cadena";
 echo "La cadena es: $cadena" . BR;
-//$subcadena = "la cadena";
-$subcadena = "XXXX";
+$subcadena = "la cadena";
 $posicion = strpos($cadena, $subcadena);
 if ($posicion) {
     echo "La subcadena se inicia dentro de la cadena en la posición: $posicion" . BR;
