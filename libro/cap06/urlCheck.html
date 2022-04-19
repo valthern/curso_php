@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL con JS</title>
+  </head>
+  <body>
+    <p>Teclee un texto para su codificaci&oacute;n URL.</p>
+    <form id="formulario1" name="formulario1">
+      <p>
+        <textarea
+          name="textoOriginal"
+          id="textoOriginal"
+          cols="50"
+          rows="4"
+        ></textarea>
+      </p>
+    </form>
+    <form
+      action="urlCheck.php"
+      id="formulario2"
+      name="formulario2"
+      method="post"
+      onsubmit="javascript: return comprobarFormulario()"
+    >
+      <p>
+        <input type="hidden" name="ocultoTexto" id="ocultoTexto" value="" />
+        <input type="submit" value="ENVIAR" name="mandar" id="mandar" />
+        <input type="reset" value="BORRAR" name="borrar" id="borrar" />
+      </p>
+    </form>
+
+    <script>
+      function comprobarFormulario() {
+        document.getElementById("ocultoTexto").value = escape(
+          document.getElementById("textoOriginal").value
+        )
+        return true
+      }
+    </script>
+  </body>
+</html>
