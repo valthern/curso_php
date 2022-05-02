@@ -1,6 +1,7 @@
 <?php
 $ocultoTexto = $_POST["ocultoTexto"];
-$textoRecuperado = rawurldecode(str_replace("%0D%0A", "<br />", $ocultoTexto));
+//$textoRecuperado = rawurldecode(str_replace("%0D%0A", "<br />", $ocultoTexto));
+$textoRecuperado = rawurldecode(str_replace("%0A", "<br />", $ocultoTexto));
 ?>
 <!DOCTYPE html>
 <html lang="es">
