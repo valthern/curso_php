@@ -14,6 +14,19 @@ $fecha=getdate();
         <tr>
             <th colspan="2">DATOS DE LA FECHA</th>
         </tr>
+        <tr>
+            <th>CLAVE</th>
+            <TH>VALOR</TH>
+        </tr>
+        <?php
+            include_once "_constantes.php";
+            foreach ($fecha as $clave => $valor) {
+                echo "<tr>\n";
+                echo "<td>$clave</td>\n";
+                echo "<td>$valor</td>\n";
+                echo "</tr>\n";
+            }
+        ?>
     </table>
 </body>
 </html>
