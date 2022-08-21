@@ -1,6 +1,8 @@
 <?php
 
-$nombre=$_GET["nombre"];
-$edad=$_GET["edad"];
+echo "<pre>";
+var_dump($_POST);
+echo  "</pre>";
 
-echo "El usuario $nombre tiene $edad años.";
+$nombre=$_POST["nombre"];
+$edad=$_POST["edad"];

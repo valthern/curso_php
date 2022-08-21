@@ -7,7 +7,7 @@
     <title>Formulario por POST</title>
 </head>
 <body>
-    <form action="./server.php" method="post">
+    <form action="./server.php" method="get">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre">
         <label for="edad">Edad:</label>
