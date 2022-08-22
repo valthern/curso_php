@@ -12,8 +12,14 @@
     <form action="server.php" method="POST">
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+        <label for="email">Correo:</label>
+        <input type="text" name="email" id="email">
+        <label for="age">Edad:</label>
+        <input type="text" name="age" id="age">
 
-        <button type="submit" name="form">Mandar formulario</button>
+        <button type="submit">Mandar formulario</button>
     </form>
 </body>
 
