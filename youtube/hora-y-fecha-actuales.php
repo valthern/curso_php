@@ -47,9 +47,10 @@ function fecha_español_larga()
 
     return $fecha_final;
 }
+
 echo BR;
 echo fecha_español_larga() . BR;
-echo BR;
+
 function fecha_español_corta($fecha = "")
 {
     if ($fecha == "") {
@@ -83,3 +84,6 @@ function fecha_español_corta($fecha = "")
 
     return $fecha_final;
 }
+
+echo fecha_español_corta("01-09-2022");
+echo BR;
