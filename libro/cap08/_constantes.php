@@ -1,2 +1,2 @@
 <?php
-define("BR","<br />");
+define("BR", "<br />\n");

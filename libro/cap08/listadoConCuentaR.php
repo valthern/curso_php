@@ -1,6 +1,7 @@
 <?php
 include_once "_constantes.php";
 
+// Se abre el fichero para lectura
 $manejadorFichero1 = fopen("lecturaSimple.txt", "r");
 echo "El contenido del fichero es: <b>";
 // Se muestra el contenido del fichero y se asigna el total de caracteres 
