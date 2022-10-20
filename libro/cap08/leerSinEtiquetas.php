@@ -1,6 +1,7 @@
 <?php
 /*
-    AL PARECER ESTE NO FUNCIONA
+    AL PARECER ESTE NO FUNCIONA. fgetss() está marcado como obsoleto
+    obsoleto en PHP 7.3 y removido en PHP 8.0
 */
 
 include_once "_constantes.php";
