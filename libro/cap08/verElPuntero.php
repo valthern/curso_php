@@ -14,8 +14,7 @@ while (!feof($manejador)) {
     if ($caracter) {
         // Se muestra el caracter y la posición que ocupa.
         echo "El caracter en la posición ";
-        echo "<b>$posicion</b> es \"<b></b>";
-        echo "$caracter</b>\"".BR;
+        echo "<b>$posicion</b> es \"<b>$caracter</b>\"".BR;
     }
 }
 
